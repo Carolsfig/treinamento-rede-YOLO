@@ -1,21 +1,21 @@
 # Detecção de Objetos com YOLOv8: Meu Projeto de Treinamento Customizado
 
 ## Resumo do Projeto
-Neste projeto, eu demonstro o processo completo de treinamento e validação de um modelo de detecção de objetos utilizando a arquitetura **YOLOv8**. Meu objetivo foi realizar **Transfer Learning** (Aprendizado por Transferência) a partir de um modelo pré-treinado, especializando-o para detectar um conjunto customizado de classes que selecionei do dataset COCO.
+Neste projeto, eu demonstro o processo completo de treinamento e validação de um modelo de detecção de objetos utilizando a arquitetura **YOLOv8**. O objetivo foi realizar **Transfer Learning** (Aprendizado por Transferência), partindo de um modelo YOLOv8 pré-treinado com o dataset COCO e especializando-o para detectar as 80 classes de um dataset público sobre objetos diversos, obtido através do Roboflow Universe.
 
-Todo o workflow, desde a preparação dos dados com o **Roboflow** até a inferência em novas imagens, foi executado por mim no ambiente **Google Colab**.
+Todo o workflow, desde a preparação dos dados até a inferência em novas imagens, foi executado por mim no ambiente **Google Colab**.
 
 ## Tecnologias que Utilizei
 - **Python 3**
 - **PyTorch**
 - **Ultralytics YOLOv8**
-- **Roboflow** (para preparação e anotação do dataset)
+- **Roboflow** (para gerenciamento e exportação do dataset)
 - **Google Colab** (para treinamento com GPU)
-- **Dataset COCO** (como base para o meu conjunto de dados)
+- **Dataset Público do Roboflow Universe** (para o fine-tuning do modelo pré-treinado em COCO)
 
 ---
 
-##  workflow-do-projeto Meu Workflow de Trabalho
+##  Workflow do Projeto
 
 Eu dividi o projeto em quatro etapas principais para organizar o desenvolvimento:
 
