@@ -19,11 +19,17 @@ Todo o workflow, desde a preparação dos dados com o **Roboflow** até a infer�
 
 Eu dividi o projeto em quatro etapas principais para organizar o desenvolvimento:
 
-### 1. Preparação do Dataset com Roboflow
-Percebi que o dataset COCO original era muito grande e continha muitas classes desnecessárias para o meu objetivo. Por isso, utilizei a plataforma **Roboflow** para otimizar este processo. Nela, eu:
-1.  **Filtrei o Dataset:** Selecionei apenas as classes do meu interesse (`person` e `car`).
-2.  **Dividi os Dados:** Configurei a plataforma para dividir automaticamente o conjunto de dados em treino, validação e teste (70%/20%/10%), um passo que considerei crucial para um treinamento de qualidade.
-3.  **Exportei no Formato Correto:** Exportei o dataset já no formato específico do YOLOv8, o que me poupou muito tempo e evitou erros de formatação.
+### 1. Preparação do Dataset
+Para este projeto, eu utilizei um dataset público que continha imagens com diversos objetos do cotidiano, incluindo as classes que eu tinha interesse em detectar, como `person` e `car`.
+
+Diferente de uma abordagem de filtragem, eu optei por utilizar o dataset completo, com todas as suas classes originais. Meu objetivo com isso foi treinar um modelo capaz de identificar os objetos de interesse em um ambiente com maior variedade visual.
+
+Para organizar e preparar estes dados para o treinamento, eu utilizei a plataforma **Roboflow**, onde realizei as seguintes etapas:
+
+1.  **Upload e Organização:** Fiz o upload do dataset para a plataforma.
+2.  **Divisão dos Dados:** Configurei o Roboflow para dividir automaticamente o conjunto de dados em pastas de **treino, validação e teste** (na proporção 70%/20%/10%), o que é uma prática essencial para avaliar o modelo de forma justa.
+3.  **Exportação para o formato YOLOv8:** ExporteI o dataset já no formato exigido pelo YOLOv8. Essa etapa criou a estrutura de pastas e o arquivo `data.yaml` necessários, agilizando muito o início do treinamento.
+
 
 ### 2. Configuração do Ambiente e Treinamento
 Para o treinamento, eu escolhi o **Google Colab** para ter acesso a uma GPU gratuita, acelerando o processo.
