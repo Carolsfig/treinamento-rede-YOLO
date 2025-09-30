@@ -68,16 +68,18 @@ results = model.predict(
 
 ---
 
-##  Como Executar o Projeto
-
-Para replicar meu trabalho, siga os passos abaixo:
+## 🚀 Como Executar o Projeto
 
 1.  **Clone o Repositório:**
     ```bash
     git clone [https://github.com/SEU_USUARIO/NOME_DO_REPOSITORIO.git](https://github.com/SEU_USUARIO/NOME_DO_REPOSITORIO.git)
     ```
-2.  **Abra no Google Colab:** Faça o upload do arquivo `.ipynb` para o Google Colab e certifique-se de habilitar o ambiente com GPU.
-3.  **Prepare seu Dataset:** O snippet de download do Roboflow é único. Para rodar, você precisará criar sua própria conta, gerar seu dataset e colar seu código de download na célula correspondente.
+2.  **Abra no Google Colab:** Faça o upload do arquivo `.ipynb` para o Google Colab e habilite o ambiente com GPU.
+3.  **Configure sua Chave de API do Roboflow:**
+    * Este projeto utiliza o gerenciador de Secrets do Colab para proteger a chave de API. Você precisará da sua própria chave do [Roboflow](https://roboflow.com/).
+    * No Colab, clique no ícone de chave (🔑) na barra lateral esquerda.
+    * Crie um novo secret com o nome `ROBOFLOW_API_KEY`.
+    * No campo "valor", cole a sua chave de API privada do Roboflow.
 4.  **Execute as Células:** Rode as células do notebook em ordem.
 
 ---
